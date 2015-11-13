@@ -1,3 +1,4 @@
+
 #**Data Representation and Querying Project 2015**
 
 ##**Student Name:** Dara Starr G00209787
@@ -61,7 +62,9 @@ There are five values on each line, which are as follows:
 
 ###***GET***
 
-A **GET** request is possible using https://dara.starr.info/v0/leases?COUNTY=Limerick&NET_LETT_SqM=492. parameters `{COUNTY/NET_LETT_SqM}` 
+A **GET** request is possible using https://dara.starr.info/v0/leases?COUNTY=Limerick&NET_LETT_SqM=492.
+
+ parameters `{COUNTY/NET_LETT_SqM}` 
 validation `{String single word} : {integer}`
 
 This will return all the leases from Limerick that also have the size of 492 meters squared. The response will be returned in the format of:
@@ -126,3 +129,9 @@ This will create a record. We assign new values to each of the fields. This is w
         "NET LETT SqM": 580,
         "RENT PA": 12000
       },]
+
+
+
+
+
+> Written with [StackEdit](https://stackedit.io/).
