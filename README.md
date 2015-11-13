@@ -71,18 +71,15 @@ A **GET** request is possible using https://dara.starr.info/v0/leases?COUNTY=Lim
 validation `{String single word} : {integer}`
 
 This will return all the leases from Limerick that also have the size of 492 meters squared. The response will be returned in the format of:
- 
 
- - "COUNTY": the county of the lease.
+  -"COUNTY": the county of the lease.
  - "BUILDING": the name of the building. 
  - "ADDRESS_1": the street where the lease is located. 
  - "NET_LETT_SqM": the size of the car. 
  - "RENT_PA": the annual rent of the lease.
 
 
-
-  
-
+#####code
     GET /leases?COUNTY=LIMERICK&NET_LETT_SqM=492HTTP/1.1
     Host: dara.starr.info
     Cache-Control: no-cache
