@@ -1,3 +1,4 @@
+
 #**Data Representation and Querying Project 2015**
 
 ##**Student Name:** Dara Starr G00209787
@@ -54,10 +55,10 @@ This  is two records from the csv after they have been converted into json. Json
       },] ..........etc
 
 ###**Possible requests**
-**GET**: A read representation of a specific resource
-**POST**: Create or update without a known ID
-**PUT** :Update of create with a known ID
-**DELETE**: Remove
+**GET**: A read representation of a specific resource<BR/>
+**POST**: Create or update without a known ID<BR/>
+**PUT** :Update of create with a known ID<BR/>
+**DELETE**: Remove<BR/>
 
 
 
@@ -137,3 +138,7 @@ This will create a record. We assign new values to each of the fields. This is w
 
 ###**CONCLUSION**
 Hope the information provided by this api is adequate for your needs. any queries you have you can contact us on dara.starr.info@fakeemail.com
+
+
+
+> Written with [StackEdit](https://stackedit.io/).
