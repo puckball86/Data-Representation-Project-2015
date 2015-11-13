@@ -6,6 +6,7 @@
 ###**Introduction**
 
 This project provides the design and documentation for the dataset "Leases surrendered in 2009" which is available at (https://data.gov.ie/dataset/leases-surrendered-in-2009). The host I am using for this project is (https://dara.starr.info/v0/)
+Users are allowed to access the records using HTTP requests like 'GET' and if they want to add to the Leases they can use a 'POST'.  People who might use this information could be realtors, auctioneers or banks. All the information provided is relevant in their lines of work.
 
 ###**About The Data**
 This dataset was received in Comma Separated Values (CSV) format, and was downloaded from [*data.gov.ie*](https://data.gov.ie/dataset/leases-surrendered-in-2009).
@@ -34,6 +35,8 @@ There are five values on each line, which are as follows:
 
 
 ###**Example Json Code**
+
+This  is two records from the csv after they have been converted into json. Json makes it very easy to read and understand exactly what you are looking for and this is a good reference for the requests you later might want to perform and the format the response will be output to you.
 
       [ 
       {
@@ -68,18 +71,23 @@ A **GET** request is possible using https://dara.starr.info/v0/leases?COUNTY=Lim
 validation `{String single word} : {integer}`
 
 This will return all the leases from Limerick that also have the size of 492 meters squared. The response will be returned in the format of:
+ 
+
  - "COUNTY": the county of the lease.
  - "BUILDING": the name of the building. 
  - "ADDRESS_1": the street where the lease is located. 
  - "NET_LETT_SqM": the size of the car. 
  - "RENT_PA": the annual rent of the lease.
 
+
+
   
 
-     GET /leases?COUNTY=LIMERICK&NET_LETT_SqM=492HTTP/1.1
-        Host: dara.starr.info
-        Cache-Control: no-cache
+    GET /leases?COUNTY=LIMERICK&NET_LETT_SqM=492HTTP/1.1
+    Host: dara.starr.info
+    Cache-Control: no-cache
 
+###**RESPONSE**
 This is the sample output from the parametrized GET request. 
 
     {
