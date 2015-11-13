@@ -1,4 +1,3 @@
-
 #**Data Representation and Querying Project 2015**
 
 ##**Student Name:** Dara Starr G00209787
@@ -136,8 +135,5 @@ This will create a record. We assign new values to each of the fields. This is w
         "RENT PA": 12000
       },]
 
-
-
-
-
-> Written with [StackEdit](https://stackedit.io/).
+###**CONCLUSION**
+Hope the information provided by this api is adequate for your needs. any queries you have you can contact us on dara.starr.info@fakeemail.com
